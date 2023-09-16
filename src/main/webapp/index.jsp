@@ -2,12 +2,12 @@
 <head>
   <style>
     body {
-      background-color: blue;
+      background-color: orange;
     }
   </style>
 </head>
 <body>
-  <h1><font color='white'> Hey WUDI THE BOSS <font></h1>
+  <h1><font color='black'> Hey WUDI THE BOSS <font></h1>
 
   <a href="https://www.instagram.com/askwudii/">Click For MY Instagram</a>
   
