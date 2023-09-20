@@ -2,7 +2,7 @@
 <head>
   <style>
     body {
-      background-color: black;
+      background-color: pink;
     }
   </style>
 </head>
