@@ -1,90 +1,20 @@
 <html>
-    <head>
-        <title>Info Page</title>
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-    </head>
-    <body>
-        <header>
-            <table width="100%">
-                <tr>
-                    <td width="75%">
-                        <h1><a href="index.jsp">Best Deal</a></h1>
-                    </td>
-                    <td width="25%">
-                        <a href="cart.jsp"><img src="img/cart.jpg" alt="cart" width="80" height="80"/></a>
-                    </td>
-                </tr>
-            </table>
-        </header>
-        <section>
-            <table width="100%">
-                <tr height="40px">
-                    <td width="40%">
-                        <ul>
-                            <li><a href="index.jsp" class="stylish">Home</a></li>
-                            <li><a href="#" class="stylish">Weekly Deals</a></li>
-                            <li><a href="#" class="stylish">Contact</a></li>
-                            <li><a href="#" class="stylish">About us</a></li>
-                        </ul>
-                    </td>
-                    <td width="30%">
-                        <input type="text" name="search">
-                        <a href="#" class="stylish">Search it</a>
-                    </td>
-                    <td width="30%">
-                        <%
-                        if(session.getAttribute("user") != null) {
-                        %>
-                        <a href="info.jsp" class="normal">Hi, <%= u.getUserID() %></a>
-                        <%
-                            }else {
-                        %>
+<head>
+  <style>
+    body {
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1><font color='white'> THIS JENKINS PIPELINE WORKED <font></h1>
 
-                        <a href="signin.jsp" class="normal">Sign In</a>
-                        <span> or </span>
-                        <a href="signin.jsp" class="normal">Create an Account</a>
-                        <%
-                            }
-                        %>
-                    </td>
-                </tr>
-            </table>
-        </section>
-        <nav>
-            <ul>
-                <form action="catalog.jsp">
-                    <li><input type="submit" name="product" value="Phones"></li>
-                    <li><input type="submit" name="product" value="Tablets"></li>
-                    <li><input type="submit" name="product" value="Laptop"></li>
-                    <li><input type="submit" name="product" value="TV"></li>
-                </form>
-            </ul>
-        </nav>
-
-        <aside>
-            <h1 align="center">Your Orders</h1>
-            <%
-                ArrayList<Order> orders = u.getOrders();
-                if(orders.isEmpty()){
-            %>
-            <p> No orders made yet! </p>
-            <%
-                } else {
-            %>
-            <form action="info.jsp">
-            <%
-                for(Order o : orders){
-            %>
-                <p><%= o.showOrder() %><br>Remove: <input type="submit" name="remove" value="<%= o.getConf() %>"></p>
-                <br>
-                <br>
-            <%
-                }
-            %>
-            </form>
-            <%
-              }
-            %>
-        </aside>
-    </body>
-<html>
+  <a href="https://www.instagram.com/askwudii/">Click For MY Instagram</a>
+  
+  <h2> It was taken from Github to Jenkins and then to Maven, Sonar, Nexus and Tomcat</h2>
+  
+  <h3> This Operation was perfumed in London, United Kingdom </h3>
+  
+  <h1> Keep Learning Wudi..!! </h1>
+</body>
+</html>
