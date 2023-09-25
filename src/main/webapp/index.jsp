@@ -2,12 +2,12 @@
 <head>
   <style>
     body {
-      background-color: yellow;
+      background-color: green;
     }
   </style>
 </head>
 <body>
-  <h1><font color='black'> THIS JENKINS PIPELINE WORKED <font></h1>
+  <h1><font color='white'> THIS JENKINS PIPELINE WORKED <font></h1>
 
   <a href="https://www.instagram.com/askwudii/">Click For MY Instagram</a>
   
