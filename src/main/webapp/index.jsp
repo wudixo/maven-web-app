@@ -1,22 +1,3 @@
-<!DOCTYPE html>
-<%@ page import="java.util.*"%>
-<%@ page import="javax.servlet.*"%>
-<%@ page import="javax.servlet.http.*"%>
-<%@ page import="beans.User" %>
-<%@ page import="beans.Order" %>
-
-<%
-    User u = new User("Teste");
-    if(session.getAttribute("user") != null) u = (User)session.getAttribute("user");
-
-    String order;
-    if(request.getParameter("remove") != null) {
-        order = request.getParameter("remove");
-        u.removeOrder(order);
-        session.setAttribute("user", u);
-    }
-%>
-
 <html>
     <head>
         <title>Info Page</title>
